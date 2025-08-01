@@ -1,0 +1,29 @@
+# Development files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Test files
+**/*.test.*
+**/*.spec.*
+coverage/
+.nyc_output
+
+# Documentation
+README.md
+docs/
+
+# Environment files (add your actual env files here if needed)
+# .env.local
+# .env.development
+
+# Cache directories
+.cache/
+*.tsbuildinfo
