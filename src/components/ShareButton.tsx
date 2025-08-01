@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Share2, Github, Linkedin, Twitter, Mail, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Monitor } from 'lucide-react'; 
+
 
 export const ShareButton = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -26,6 +28,12 @@ export const ShareButton = () => {
       icon: Mail,
       url: 'lalithkrish24@gmail.com',
       color: 'hover:text-red-400'
+    },
+    {
+      name: 'Portfolio',
+      icon: Monitor,
+      url: 'https://lalithkishoreportfolio.vercel.app/',
+      color: 'hover:text-green-400'
     }
   ];
 
