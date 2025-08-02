@@ -23,15 +23,9 @@ export const ShareButton = () => {
       color: 'hover:text-blue-400'
     },
     {
-      name: 'Email',
-      icon: Mail,
-      url: 'lalithkrish24@gmail.com',
-      color: 'hover:text-red-400'
-    },
-     {
       name: 'Portfolio',
       icon: Monitor,
-      url: 'https://lalithkishoreportfolio.vercel.app/',
+      url: 'https://lalithkishore-portfolio.vercel.app/',
       color: 'hover:text-green-400'
     },
   ];
