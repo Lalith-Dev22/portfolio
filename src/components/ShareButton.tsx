@@ -34,7 +34,7 @@ export const ShareButton = () => {
       icon: Monitor,
       url: 'https://lalithkishoreportfolio.vercel.app/',
       color: 'hover:text-green-400'
-    }
+    },
   ];
 
   useEffect(() => {
