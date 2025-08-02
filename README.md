@@ -1,55 +1,73 @@
-# 💼 My Personal Developer Portfolio
+# Welcome to your Lovable project
 
-This is my **private developer portfolio**, crafted to showcase my skills, experience, and project highlights. It's built using modern frontend technologies with smooth animations and a responsive design.
+## Project info
 
-> 🔒 This is a private project intended for personal and internal use only.
+**URL**: https://lovable.dev/projects/587304f0-44e3-4b07-a1cf-806e3910f2ca
 
----
+## How can I edit this code?
 
-## 🧠 Project Overview
+There are several ways of editing your application.
 
-This portfolio includes:
+**Use Lovable**
 
-- A responsive landing page with animated transitions
-- About me and resume section
-- Project showcase with live previews and descriptions
-- Contact interface
-- Fully customized design and layout matching my professional identity
+Simply visit the [Lovable Project](https://lovable.dev/projects/587304f0-44e3-4b07-a1cf-806e3910f2ca) and start prompting.
 
----
+Changes made via Lovable will be committed automatically to this repo.
 
-## 🛠 Tech Stack
+**Use your preferred IDE**
 
-The portfolio is developed using:
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-- **Vite** – Lightning-fast build tool
-- **React** – Component-based frontend library
-- **Tailwind CSS** – Utility-first CSS framework
-- **shadcn/ui** – Accessible UI component library
-- **TypeScript** – Type safety for predictable code
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
----
+Follow these steps:
 
-## ⚙️ Local Development
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-You can run the project locally using Node.js and npm.
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-### Prerequisites
+# Step 3: Install the necessary dependencies.
+npm i
 
-- Node.js (v16 or above)
-- npm
-
-### Steps to Run
-
-```bash
-# Step 1: Clone the repository
-git clone <PRIVATE_REPO_URL>
-
-# Step 2: Move into the project directory
-cd portfolio
-
-# Step 3: Install dependencies
-npm install
-
-# Step 4: Start the development server
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
+```
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/587304f0-44e3-4b07-a1cf-806e3910f2ca) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)

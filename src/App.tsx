@@ -11,6 +11,7 @@ import { PortfolioSidebar } from "./components/PortfolioSidebar";
 import { MobileNav } from "./components/MobileNav";
 import { CodeLoader } from "./components/CodeLoader";
 import { ShareButton } from "./components/ShareButton";
+import { ProjectDetail } from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const AppContent = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/projects/:id" element={<ProjectDetail />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

@@ -34,7 +34,7 @@ const projects = [
     title: "Check-In/Check-Out System",
     description: "A real-time intern time tracking system with authentication and session management.",
     fullDescription: "A comprehensive time tracking solution designed specifically for intern management. The system features real-time clock-in/out functionality, secure authentication, automated session management, and detailed reporting capabilities. Built with modern web technologies to ensure scalability and performance.",
-    image: "https://source.unsplash.com/600x400/?clock,web",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
     tags: ["React-Bootstrap", "Node.js", "MongoDB"],
     liveUrl: "#",
     codeUrl: "#",
@@ -63,9 +63,9 @@ const projects = [
       "Multi-user concurrent support"
     ],
     gallery: [
-      "https://source.unsplash.com/800x600/?dashboard,analytics",
-      "https://source.unsplash.com/800x600/?login,authentication",
-      "https://source.unsplash.com/800x600/?clock,timer"
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1509909756405-be0199881695?w=800&h=600&fit=crop"
     ]
   },
   {
@@ -73,7 +73,7 @@ const projects = [
     title: "Support Ticket Platform",
     description: "Web-based system for managing and resolving raised tickets with status and commenting.",
     fullDescription: "A comprehensive ticket management system that streamlines customer support operations. Features include ticket creation, assignment, status tracking, commenting system, and advanced filtering capabilities. Designed to improve response times and customer satisfaction.",
-    image: "https://source.unsplash.com/600x400/?support,tickets",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
     tags: ["React", "Express.js", "MongoDB"],
     liveUrl: "#",
     codeUrl: "#",
@@ -103,9 +103,9 @@ const projects = [
       "Priority-based assignment"
     ],
     gallery: [
-      "https://source.unsplash.com/800x600/?support,customer",
-      "https://source.unsplash.com/800x600/?ticket,management",
-      "https://source.unsplash.com/800x600/?dashboard,analytics"
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
     ]
   },
   {
@@ -113,7 +113,7 @@ const projects = [
     title: "Static Perfume Shop Website",
     description: "Elegant static site for showcasing perfume products, with Firebase-backed product management.",
     fullDescription: "A beautifully crafted e-commerce website for a luxury perfume retailer. The site combines elegant design with functional product management, featuring Firebase integration for dynamic content updates, responsive design for all devices, and optimized performance.",
-    image: "https://source.unsplash.com/600x400/?perfume,shop",
+    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=400&fit=crop",
     tags: ["HTML", "CSS", "Firebase"],
     liveUrl: "#",
     codeUrl: "#",
@@ -143,9 +143,9 @@ const projects = [
       "Contact form integration"
     ],
     gallery: [
-      "https://source.unsplash.com/800x600/?perfume,luxury",
-      "https://source.unsplash.com/800x600/?cosmetics,elegant",
-      "https://source.unsplash.com/800x600/?shopping,retail"
+      "https://images.unsplash.com/photo-1594736797933-d0801ba2fe65?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=600&fit=crop"
     ]
   },
   {
@@ -153,7 +153,7 @@ const projects = [
     title: "Intern Task Monitoring Dashboard",
     description: "Task tracker dashboard for interns to view, filter, and manage assigned work items.",
     fullDescription: "A comprehensive task management dashboard specifically designed for intern supervision and productivity tracking. Features include task assignment, progress monitoring, deadline management, and performance analytics to help mentors guide interns effectively.",
-    image: "https://source.unsplash.com/600x400/?dashboard,task",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
     tags: ["React", "Tailwind CSS", "Node.js"],
     liveUrl: "#",
     codeUrl: "#",
@@ -183,18 +183,17 @@ const projects = [
       "Goal setting and tracking"
     ],
     gallery: [
-      "https://source.unsplash.com/800x600/?dashboard,analytics",
-      "https://source.unsplash.com/800x600/?task,management",
-      "https://source.unsplash.com/800x600/?productivity,workspace"
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
     ]
   },
-  // Additional projects for the "All Projects" page
   {
     id: 5,
     title: "E-learning Platform",
     description: "Interactive online learning platform with video streaming and progress tracking.",
-    fullDescription: "A comprehensive e-learning platform designed to deliver interactive educational content with seamless video streaming, progress tracking, and student-teacher communication tools.",
-    image: "https://source.unsplash.com/600x400/?education,online",
+    fullDescription: "A comprehensive e-learning platform designed to deliver interactive educational content with seamless video streaming, progress tracking, and student-teacher communication tools. The platform supports multiple course formats, interactive quizzes, and detailed analytics for educators.",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
     tags: ["Vue.js", "Laravel", "MySQL"],
     liveUrl: "#",
     codeUrl: "#",
@@ -205,14 +204,36 @@ const projects = [
     year: "2024",
     duration: "6 weeks",
     client: "Educational Institute",
-    role: "Full Stack Developer"
+    role: "Full Stack Developer",
+    challenge: "Building a scalable learning management system that supports diverse content types while maintaining excellent performance and user engagement.",
+    solution: "Implemented a microservices architecture with efficient video streaming, interactive learning modules, and comprehensive progress tracking system.",
+    technologies: [
+      { name: "Vue.js", type: "Frontend" },
+      { name: "Laravel", type: "Backend" },
+      { name: "MySQL", type: "Database" },
+      { name: "Redis", type: "Caching" },
+      { name: "AWS S3", type: "Storage" }
+    ],
+    features: [
+      "Video streaming and playback",
+      "Interactive course modules",
+      "Progress tracking system",
+      "Student-teacher messaging",
+      "Quiz and assessment tools",
+      "Certificate generation"
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop"
+    ]
   },
   {
     id: 6,
     title: "Weather Analytics App",
     description: "Real-time weather tracking with predictive analytics and data visualization.",
-    fullDescription: "A sophisticated weather application that provides real-time weather data, predictive analytics, and beautiful data visualizations for weather enthusiasts and professionals.",
-    image: "https://source.unsplash.com/600x400/?weather,analytics",
+    fullDescription: "A sophisticated weather application that provides real-time weather data, predictive analytics, and beautiful data visualizations for weather enthusiasts and professionals. Features include historical data analysis, weather alerts, and customizable dashboards.",
+    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
     tags: ["React Native", "Python", "PostgreSQL"],
     liveUrl: "#",
     codeUrl: "#",
@@ -223,7 +244,29 @@ const projects = [
     year: "2024",
     duration: "4 weeks",
     client: "Weather Service Provider",
-    role: "Mobile Developer"
+    role: "Mobile Developer",
+    challenge: "Creating a mobile weather app that processes large amounts of meteorological data while providing intuitive visualizations and accurate predictions.",
+    solution: "Developed a React Native app with Python-based machine learning backend for weather prediction and PostgreSQL for efficient data storage and retrieval.",
+    technologies: [
+      { name: "React Native", type: "Mobile Framework" },
+      { name: "Python", type: "Backend" },
+      { name: "PostgreSQL", type: "Database" },
+      { name: "TensorFlow", type: "ML Framework" },
+      { name: "Chart.js", type: "Visualization" }
+    ],
+    features: [
+      "Real-time weather updates",
+      "Predictive weather analytics",
+      "Interactive weather maps",
+      "Historical data analysis",
+      "Weather alerts and notifications",
+      "Customizable dashboard widgets"
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1561484930-998b6a7b22e8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop"
+    ]
   }
 ];
 
@@ -246,6 +289,7 @@ const StatusBadge = ({ status }: { status: string }) => {
 
 const ProjectCard = ({ project, index, onClick, isAllProjects = false }: any) => (
   <motion.div
+    key={`project-${project.id}`} // Add explicit key
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: index * 0.1 }}
@@ -319,7 +363,7 @@ const ProjectCard = ({ project, index, onClick, isAllProjects = false }: any) =>
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag: string, tagIndex: number) => (
             <motion.span 
-              key={tag}
+              key={`${project.id}-tag-${tagIndex}`}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: tagIndex * 0.1 }}
@@ -369,32 +413,33 @@ export const ProjectsSection = () => {
   const [currentView, setCurrentView] = useState('projects');
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
-  // Scroll to top when view changes
-  useEffect(() => {
-    if (currentView !== 'projects') {
+  // Reset scroll and clear selected project when returning to main view
+  const handleBackToPortfolio = () => {
+    setSelectedProject(null);
+    setCurrentView('projects');
+    // Small delay to ensure state is updated before scrolling
+    setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  }, [currentView]);
+    }, 100);
+  };
 
   const handleExploreAll = () => {
     setCurrentView('allProjects');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleProjectClick = (project: any) => {
     setSelectedProject(project);
     setCurrentView('projectDetail');
-  };
-
-  const handleBackToPortfolio = () => {
-    setCurrentView('projects');
-    setSelectedProject(null);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   if (currentView === 'allProjects') {
     return (
       <div className="min-h-screen bg-background fixed inset-0 z-50 overflow-y-auto">
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           <motion.div
+            key="all-projects"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -446,7 +491,7 @@ export const ProjectsSection = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
                   <ProjectCard 
-                    key={project.id} 
+                    key={`all-${project.id}`}
                     project={project} 
                     index={index} 
                     onClick={handleProjectClick}
@@ -464,8 +509,9 @@ export const ProjectsSection = () => {
   if (currentView === 'projectDetail' && selectedProject) {
     return (
       <div className="min-h-screen bg-background fixed inset-0 z-50 overflow-y-auto">
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           <motion.div
+            key={`project-detail-${selectedProject.id}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -625,10 +671,11 @@ export const ProjectsSection = () => {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center p-4 glass-card">
                         <GitBranch className="h-8 w-8 text-primary mx-auto mb-2" />
-                        <p className="text-sm font-mono text-muted-foreground">UI/UX Designer</p>
+                        <p className="text-sm font-mono text-muted-foreground">Full Stack</p>
                       </div>
                       <div className="text-center p-4 glass-card">
-                        <p className="text-sm font-mono text-muted-foreground">Web Development</p>
+                        <Code className="h-8 w-8 text-primary mx-auto mb-2" />
+                        <p className="text-sm font-mono text-muted-foreground">Development</p>
                       </div>
                     </div>
                   </div>
@@ -772,8 +819,9 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="min-h-screen flex items-center section-padding py-24">
       <div className="max-w-7xl mx-auto w-full">
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           <motion.div
+            key="featured-projects"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -801,7 +849,7 @@ export const ProjectsSection = () => {
             <div className="grid lg:grid-cols-2 gap-8">
               {featuredProjects.map((project, index) => (
                 <ProjectCard 
-                  key={project.id} 
+                  key={`featured-${project.id}`}
                   project={project} 
                   index={index} 
                   onClick={handleProjectClick}

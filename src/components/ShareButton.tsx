@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Monitor } from 'lucide-react'; 
 
-
 export const ShareButton = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -29,7 +28,7 @@ export const ShareButton = () => {
       url: 'lalithkrish24@gmail.com',
       color: 'hover:text-red-400'
     },
-    {
+     {
       name: 'Portfolio',
       icon: Monitor,
       url: 'https://lalithkishoreportfolio.vercel.app/',

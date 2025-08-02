@@ -1,42 +1,65 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Product Manager",
-    company: "TechFlow Inc",
-    content: "Working with this developer has been transformative for our product. The attention to detail and innovative solutions exceeded all expectations.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+    name: "Tousif Pasha",
+    role: "Client",
+    content:
+      "Thank you for your excellent work on my portfolio. I truly appreciate your professionalism and attention to detail — it made the entire experience smooth. Looking forward to working with you again!",
+    rating: 5
   },
   {
-    name: "Michael Chen",
-    role: "Creative Director", 
-    company: "Design Studio",
-    content: "Exceptional creativity combined with technical excellence. The interactive experiences created are simply breathtaking and user-friendly.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+    name: "Vignesh. R",
+    role: "Client",
+    content:
+      "Awesome service! I truly appreciate the professionalism and attention to detail. The entire experience was smooth, and I’m definitely looking forward to future collaborations.",
+    rating: 5
   },
   {
-    name: "Emily Rodriguez",
-    role: "CEO",
-    company: "StartupXYZ",
-    content: "The quality of work and professionalism is outstanding. Our website's performance and user engagement improved dramatically.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+    name: "Angel.R",
+    role: "Client",
+    content:
+      "Thank you so much for all your help with the project. I couldn’t have done it without your support. Your ideas and guidance really helped us, and I’ve learned a lot from you. You truly made the project awesome.",
+    rating: 5
   },
   {
-    name: "David Kim",
+    name: "Varsha",
     role: "Tech Lead",
-    company: "Innovation Labs",
-    content: "Incredible problem-solving skills and cutting-edge technical implementation. A true expert in modern web technologies.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+    content:
+"Working with you has been a delight. You brought clarity to my vision and translated it into an intuitive product. Deadlines were met, and quality was never compromised.",
+    rating: 5
+  },
+  {
+    name: "Amit Verma",
+    role: "Engineering Manager",
+    content:
+      "Exceptional work ethic and technical ability. The final output exceeded my expectations in terms of performance, design, and scalability. Highly recommended!",
+    rating: 5
+  },
+  {
+    name: "Linda Carter",
+    role: "UX Consultant",
+    content:
+      "Brilliant eye for detail and user experience. The interfaces delivered were modern, fluid, and extremely user-centric. I’d happily recommend your services to others.",
+    rating: 5
+  },
+  {
+    name: "Rajesh Iyer",
+    role: "CTO",
+    content:
+      "Your dedication and skillset made a huge impact on my project. Everything was handled with utmost professionalism. It's rare to find such a reliable developer.",
+    rating: 5
   }
 ];
 
 export const TestimonialsSection = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const displayedTestimonials = showAll ? testimonials : testimonials.slice(0, 4);
+
   return (
     <section id="testimonials" className="min-h-screen flex items-center section-padding py-16 sm:py-24">
       <div className="max-w-6xl mx-auto w-full">
@@ -66,12 +89,12 @@ export const TestimonialsSection = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
+            {displayedTestimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.name}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.15 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="glass-card p-8 space-y-6 hover:bg-card/20 transition-all duration-500"
               >
                 {/* Rating */}
@@ -87,21 +110,21 @@ export const TestimonialsSection = () => {
                 </blockquote>
 
                 {/* Author */}
-                <div className="flex items-center space-x-4 pt-4 border-t border-border/50">
-                  <img 
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20"
-                  />
-                  <div>
-                    <div className="font-semibold text-foreground">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">
-                      {testimonial.role} at {testimonial.company}
-                    </div>
-                  </div>
+                <div className="pt-4 border-t border-border/50">
+                  <div className="font-semibold text-foreground">{testimonial.name}</div>
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* Toggle Button */}
+          <div className="text-center">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="mt-8 text-sm px-6 py-3 bg-primary text-white rounded-xl transition-all duration-300 hover:bg-primary/80"
+            >
+              {showAll ? "Show Less" : "View More Testimonials"}
+            </button>
           </div>
 
           {/* Summary Stats */}
@@ -109,7 +132,7 @@ export const TestimonialsSection = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center pt-8"
           >
             <div className="glass-card p-8 space-y-4">
               <div className="text-4xl font-bold text-primary">98%</div>
@@ -124,7 +147,6 @@ export const TestimonialsSection = () => {
               <div className="text-sm text-muted-foreground">Project Success Rate</div>
             </div>
           </motion.div>
-
         </motion.div>
       </div>
     </section>

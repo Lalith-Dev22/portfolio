@@ -2,9 +2,107 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
+import { Mail, Phone, MapPin, Github, Linkedin, Loader2 } from 'lucide-react';
+import { useState, useRef, FormEvent } from 'react';
+import emailjs from '@emailjs/browser';
 
 export const ContactSection = () => {
+  const { toast } = useToast();
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [errors, setErrors] = useState<{[key: string]: string}>({});
+
+  // Replace these with your actual EmailJS credentials
+  const SERVICE_ID = 'service_zbluk9d';
+  const TEMPLATE_ID = 'template_9gza6c8';
+  const PUBLIC_KEY = 'gGNojYCaskp2rIiCe';
+
+  const validateForm = () => {
+    const newErrors: {[key: string]: string} = {};
+    
+    if (!formData.firstName.trim()) newErrors.firstName = 'First name is required';
+    if (!formData.lastName.trim()) newErrors.lastName = 'Last name is required';
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Email is invalid';
+    }
+    if (!formData.subject.trim()) newErrors.subject = 'Subject is required';
+    if (!formData.message.trim()) newErrors.message = 'Message is required';
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: '' }));
+    }
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      toast({
+        title: "Validation Error",
+        description: "Please fill in all required fields correctly.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: 'Lalith', // Your name
+      };
+
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+      
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+      
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="min-h-screen flex items-center section-padding py-16 sm:py-24">
       <div className="max-w-6xl mx-auto w-full">
@@ -108,60 +206,123 @@ export const ContactSection = () => {
             >
               <h3 className="text-2xl font-bold text-foreground">Send a Message</h3>
               
-              <form className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">First Name</label>
+                    <label className="text-sm font-medium text-foreground">
+                      First Name <span className="text-destructive">*</span>
+                    </label>
                     <Input 
+                      name="firstName"
                       placeholder="John"
-                      className="bg-background/50 border-border/50 focus:border-primary transition-colors"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      className={`bg-background/50 border-border/50 focus:border-primary transition-colors ${
+                        errors.firstName ? 'border-destructive' : ''
+                      }`}
+                      disabled={isLoading}
                     />
+                    {errors.firstName && (
+                      <p className="text-xs text-destructive">{errors.firstName}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Last Name</label>
+                    <label className="text-sm font-medium text-foreground">
+                      Last Name <span className="text-destructive">*</span>
+                    </label>
                     <Input 
+                      name="lastName"
                       placeholder="Doe"
-                      className="bg-background/50 border-border/50 focus:border-primary transition-colors"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      className={`bg-background/50 border-border/50 focus:border-primary transition-colors ${
+                        errors.lastName ? 'border-destructive' : ''
+                      }`}
+                      disabled={isLoading}
                     />
+                    {errors.lastName && (
+                      <p className="text-xs text-destructive">{errors.lastName}</p>
+                    )}
                   </div>
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Email</label>
+                  <label className="text-sm font-medium text-foreground">
+                    Email <span className="text-destructive">*</span>
+                  </label>
                   <Input 
+                    name="email"
                     type="email"
                     placeholder="john@example.com"
-                    className="bg-background/50 border-border/50 focus:border-primary transition-colors"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className={`bg-background/50 border-border/50 focus:border-primary transition-colors ${
+                      errors.email ? 'border-destructive' : ''
+                    }`}
+                    disabled={isLoading}
                   />
+                  {errors.email && (
+                    <p className="text-xs text-destructive">{errors.email}</p>
+                  )}
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Subject</label>
+                  <label className="text-sm font-medium text-foreground">
+                    Subject <span className="text-destructive">*</span>
+                  </label>
                   <Input 
+                    name="subject"
                     placeholder="Project Discussion"
-                    className="bg-background/50 border-border/50 focus:border-primary transition-colors"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    className={`bg-background/50 border-border/50 focus:border-primary transition-colors ${
+                      errors.subject ? 'border-destructive' : ''
+                    }`}
+                    disabled={isLoading}
                   />
+                  {errors.subject && (
+                    <p className="text-xs text-destructive">{errors.subject}</p>
+                  )}
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Message</label>
+                  <label className="text-sm font-medium text-foreground">
+                    Message <span className="text-destructive">*</span>
+                  </label>
                   <Textarea 
+                    name="message"
                     placeholder="Tell me about your project ideas..."
                     rows={6}
-                    className="bg-background/50 border-border/50 focus:border-primary transition-colors resize-none"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className={`bg-background/50 border-border/50 focus:border-primary transition-colors resize-none ${
+                      errors.message ? 'border-destructive' : ''
+                    }`}
+                    disabled={isLoading}
                   />
+                  {errors.message && (
+                    <p className="text-xs text-destructive">{errors.message}</p>
+                  )}
                 </div>
                 
                 <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                  whileHover={{ scale: isLoading ? 1 : 1.02 }}
+                  whileTap={{ scale: isLoading ? 1 : 0.98 }}
                 >
                   <Button 
                     type="submit"
                     size="lg" 
-                    className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-500"
+                    disabled={isLoading}
+                    className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-500 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      'Send Message'
+                    )}
                   </Button>
                 </motion.div>
               </form>
