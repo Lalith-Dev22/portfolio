@@ -110,24 +110,6 @@ export const ExperienceSection = () => {
               </motion.div>
             ))}
           </div>
-
-          {/* Timeline Tag */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="relative mt-16"
-          >
-            {/* Vertical timeline line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-primary transform -translate-x-1/2 z-0" />
-
-            {/* Centered label above the line */}
-            <div className="relative z-10 text-center py-8">
-              <span className="relative z-20 bg-background px-6 py-2 text-lg font-semibold text-primary border border-primary/20 rounded-full shadow-md inline-block">
-                Internship Journey: Oct 2024 – Feb 2025
-              </span>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>

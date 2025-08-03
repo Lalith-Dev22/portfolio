@@ -126,24 +126,6 @@ export const ResumeSection = () => {
             >
               A comprehensive overview of my professional journey and expertise
             </motion.p>
-
-            {/* Download Resume Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="pt-4"
-            >
-              <a href="/Lalith_resume.pdf" download>
-                <Button
-                  size="lg"
-                  className="bg-gradient-primary hover:shadow-glow transition-all duration-500 hover:scale-105 text-sm sm:text-base"
-                >
-                  <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  Download Resume
-                </Button>
-              </a>
-            </motion.div>
           </div>
 
           {/* Resume Content */}

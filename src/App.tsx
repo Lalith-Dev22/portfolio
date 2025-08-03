@@ -36,10 +36,7 @@ const AppContent = () => {
           <MobileNav />
           
           <main className="flex-1 relative">
-            {/* Desktop Sidebar Trigger */}
-            <div className="fixed top-4 left-4 z-50 hidden md:block">
-              <SidebarTrigger className="bg-sidebar/80 backdrop-blur-lg border border-sidebar-border hover:bg-sidebar-accent transition-all duration-300" />
-            </div>
+           
             <HomePage />
           </main>
         </div>

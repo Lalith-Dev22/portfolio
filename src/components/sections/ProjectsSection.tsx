@@ -374,27 +374,6 @@ const ProjectCard = ({ project, index, onClick, isAllProjects = false }: any) =>
           ))}
         </div>
       </div>
-
-      {!isAllProjects && (
-        <div className="flex gap-3 pt-4">
-          <Button 
-            variant="outline" 
-            size="sm"
-            className="flex-1 border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 font-mono text-xs group/btn"
-          >
-            <ExternalLink className="h-3 w-3 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
-            Deploy
-          </Button>
-          <Button 
-            variant="outline" 
-            size="sm"
-            className="flex-1 border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 font-mono text-xs group/btn"
-          >
-            <Github className="h-3 w-3 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
-            Source
-          </Button>
-        </div>
-      )}
     </div>
 
     <div className="absolute inset-0 opacity-[0.02] group-hover:opacity-[0.05] transition-opacity duration-500 pointer-events-none">
@@ -795,15 +774,7 @@ export const ProjectsSection = () => {
                   className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 hover:scale-105 font-mono text-white border-0"
                 >
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  View Live Project
-                </Button>
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  className="border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 font-mono"
-                >
-                  <Github className="h-4 w-4 mr-2" />
-                  View Source Code
+                  View Project Details
                 </Button>
               </motion.div>
             </div>

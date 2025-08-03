@@ -4,6 +4,8 @@ import { Share2, Github, Linkedin, Twitter, Mail, ExternalLink } from 'lucide-re
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Monitor } from 'lucide-react'; 
+// Import WhatsApp icon
+import { MessageCircle } from 'lucide-react';
 
 export const ShareButton = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -23,15 +25,15 @@ export const ShareButton = () => {
       color: 'hover:text-blue-400'
     },
     {
-      name: 'Email',
-      icon: Mail,
-      url: 'lalithkrish24@gmail.com',
-      color: 'hover:text-red-400'
+      name: 'WhatsApp',
+      icon: MessageCircle,
+      url: 'https://wa.me/+918050633809',
+      color: 'hover:text-green-500'
     },
      {
       name: 'Portfolio',
       icon: Monitor,
-      url: 'https://lalithkishoreportfolio.vercel.app/',
+      url: 'https://lalithdev.vercel.app/',
       color: 'hover:text-green-400'
     },
   ];
