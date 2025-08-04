@@ -27,245 +27,257 @@ import {
   Shield,
   Rocket
 } from 'lucide-react';
+import Image1 from '../../Assets/portfolio1.png';
+import Image2 from '../../Assets/portfolio4.png';
+import Image3 from '../../Assets/portfolio5.png';
+import Image4 from '../../Assets/portfolio2.png';
+import Image5 from '../../Assets/Ai-hr1.png';
+import Image6 from '../../Assets/Ai-hr2.png';
+import Image7 from '../../Assets/ai-hr3.png';
+import Image8 from '../../Assets/ai-hr4.png';
+
+
 
 const projects = [
   {
     id: 1,
-    title: "Check-In/Check-Out System",
-    description: "A real-time intern time tracking system with authentication and session management.",
-    fullDescription: "A comprehensive time tracking solution designed specifically for intern management. The system features real-time clock-in/out functionality, secure authentication, automated session management, and detailed reporting capabilities. Built with modern web technologies to ensure scalability and performance.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    tags: ["React-Bootstrap", "Node.js", "MongoDB"],
+    title: "Portfolio Website",
+    description: "A modern, responsive portfolio website built with React and Framer Motion animations.",
+    fullDescription: "A professionally designed portfolio website showcasing my skills, projects, and experience. Features smooth animations, responsive design, and interactive elements to create an engaging user experience. Built with modern web technologies to ensure performance and accessibility.",
+    image: Image1,
+    tags: ["React", "TypeScript", "Tailwind CSS"],
     liveUrl: "#",
     codeUrl: "#",
     status: "production",
-    lines: "1.2k",
-    commits: "24",
+    lines: "2.5k",
+    commits: "42",
     category: "WEB DEVELOPMENT",
-    year: "2024",
-    duration: "3 weeks",
-    client: "Internal Project",
+    year: "2025",
+    duration: "4 weeks",
+    client: "Personal Project",
     role: "Full Stack Developer",
-    challenge: "Creating a reliable time tracking system that handles concurrent users and provides accurate reporting for intern management.",
-    solution: "Implemented real-time WebSocket connections, robust authentication middleware, and comprehensive data validation to ensure accurate time tracking.",
+    challenge: "Creating a visually stunning portfolio that effectively showcases my skills and projects while maintaining excellent performance and accessibility.",
+    solution: "Implemented a component-based architecture with Framer Motion for smooth animations, Tailwind CSS for responsive design, and optimized assets for fast loading times.",
     technologies: [
-      { name: "React Bootstrap", type: "Frontend" },
-      { name: "Node.js", type: "Backend" },
-      { name: "MongoDB", type: "Database" },
-      { name: "JWT", type: "Authentication" },
-      { name: "Socket.io", type: "Real-time" }
+      { name: "React", type: "Frontend" },
+      { name: "TypeScript", type: "Language" },
+      { name: "Tailwind CSS", type: "Styling" },
+      { name: "Framer Motion", type: "Animations" },
+      { name: "Vite", type: "Build Tool" }
     ],
     features: [
-      "Real-time clock in/out functionality",
-      "Secure user authentication",
-      "Automated session management",
-      "Detailed reporting dashboard",
-      "Multi-user concurrent support"
+      "Responsive design for all devices",
+      "Smooth page transitions and animations",
+      "Interactive project showcases",
+      "Dark/light mode toggle",
+      "Contact form integration",
+      "Optimized performance metrics"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1509909756405-be0199881695?w=800&h=600&fit=crop"
+      Image2,
+      Image3,
+      Image4
     ]
   },
   {
-    id: 2,
-    title: "Support Ticket Platform",
-    description: "Web-based system for managing and resolving raised tickets with status and commenting.",
-    fullDescription: "A comprehensive ticket management system that streamlines customer support operations. Features include ticket creation, assignment, status tracking, commenting system, and advanced filtering capabilities. Designed to improve response times and customer satisfaction.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    tags: ["React", "Express.js", "MongoDB"],
+  id: 2,
+  title: "AI-HR Platform",
+  description: "AI-powered HR solution using Hugging Face models for smart hiring, insights, and automation.",
+  fullDescription: "AI-HR is a personal project focused on transforming human resource processes with the power of AI. Leveraging pre-trained Hugging Face models, it offers advanced features like resume parsing, sentiment analysis, and predictive retention analytics. The platform automates recruitment and improves HR decision-making through intelligent insights.",
+  image: Image5,
+  tags: ["React", "Node.js", "Hugging Face", "MongoDB"],
+  liveUrl: "#",
+  codeUrl: "#",
+  status: "production",
+  lines: "5.2k",
+  commits: "68",
+  category: "HR TECH",
+  year: "2025",
+  duration: "10 weeks",
+  client: "Personal Project",
+  role: "Solo Developer / AI Engineer",
+  challenge: "Creating an end-to-end HR platform that intelligently screens candidates, understands sentiment from interviews, and predicts employee retention — all without relying on manual HR processes.",
+  solution: "Used React for frontend, Node.js for backend, and integrated Hugging Face models for NLP tasks like resume parsing and sentiment analysis. MongoDB was used for flexible data storage and Socket.io for real-time updates across modules.",
+  technologies: [
+    { name: "React", type: "Frontend" },
+    { name: "Node.js", type: "Backend" },
+    { name: "Hugging Face Transformers", type: "AI/NLP" },
+    { name: "MongoDB", type: "Database" },
+    { name: "Socket.io", type: "Real-Time Communication" }
+  ],
+  features: [
+    "NLP-based resume parsing and keyword extraction",
+    "Sentiment analysis of interview text/audio using Hugging Face",
+    "AI-powered candidate ranking and shortlisting",
+    "Predictive employee retention dashboard",
+    "Smart interview scheduling with reminders",
+    "Role-based admin dashboard and analytics"
+  ],
+  gallery: [
+    Image8,
+    Image7,
+    Image6
+  ]
+},
+
+  {
+    id: 3,
+    title: "AI-Powered Chatbot",
+    description: "Intelligent conversational agent for customer support with natural language processing capabilities.",
+    fullDescription: "An advanced chatbot solution that leverages artificial intelligence to provide automated customer support. The system understands natural language queries, learns from interactions, and provides relevant responses to common customer questions, reducing support ticket volume.",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
+    tags: ["Python", "TensorFlow", "NLP"],
     liveUrl: "#",
     codeUrl: "#",
     status: "beta",
-    lines: "1.5k",
-    commits: "30",
-    category: "WEB APPLICATION",
+    lines: "2.2k",
+    commits: "38",
+    category: "ARTIFICIAL INTELLIGENCE",
     year: "2024",
-    duration: "4 weeks",
-    client: "Enterprise Client",
-    role: "Lead Developer",
-    challenge: "Building a scalable ticket management system that can handle high volumes of support requests while maintaining excellent user experience.",
-    solution: "Developed a modular architecture with efficient database indexing, real-time notifications, and intuitive user interface for both customers and support agents.",
+    duration: "6 weeks",
+    client: "SaaS Company",
+    role: "AI Engineer",
+    challenge: "Creating an intelligent chatbot that can understand natural language queries and provide accurate, helpful responses while continuously improving from user interactions.",
+    solution: "Implemented a machine learning model using TensorFlow and natural language processing techniques, with a feedback loop system for continuous improvement based on user interactions.",
     technologies: [
-      { name: "React", type: "Frontend" },
-      { name: "Express.js", type: "Backend" },
-      { name: "MongoDB", type: "Database" },
-      { name: "Redis", type: "Caching" },
-      { name: "Nodemailer", type: "Email Service" }
+      { name: "Python", type: "Backend" },
+      { name: "TensorFlow", type: "Machine Learning" },
+      { name: "NLTK", type: "Natural Language Processing" },
+      { name: "Flask", type: "API Framework" },
+      { name: "MongoDB", type: "Database" }
     ],
     features: [
-      "Ticket creation and management",
-      "Real-time status updates",
-      "Comment and reply system",
-      "Advanced filtering and search",
-      "Email notifications",
-      "Priority-based assignment"
+      "Natural language understanding",
+      "Context-aware conversations",
+      "Automated ticket classification",
+      "Learning from user interactions",
+      "Multi-language support",
+      "Integration with CRM systems"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
-    ]
-  },
-  {
-    id: 3,
-    title: "Static Perfume Shop Website",
-    description: "Elegant static site for showcasing perfume products, with Firebase-backed product management.",
-    fullDescription: "A beautifully crafted e-commerce website for a luxury perfume retailer. The site combines elegant design with functional product management, featuring Firebase integration for dynamic content updates, responsive design for all devices, and optimized performance.",
-    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=400&fit=crop",
-    tags: ["HTML", "CSS", "Firebase"],
-    liveUrl: "#",
-    codeUrl: "#",
-    status: "production",
-    lines: "600",
-    commits: "12",
-    category: "E-COMMERCE",
-    year: "2024",
-    duration: "2 weeks",
-    client: "Luxury Perfume Boutique",
-    role: "Frontend Developer & Designer",
-    challenge: "Creating an elegant, fast-loading website that showcases luxury perfumes while maintaining easy content management for the client.",
-    solution: "Developed a static site with Firebase integration for dynamic content, implemented elegant animations, and ensured perfect performance across all devices.",
-    technologies: [
-      { name: "HTML5", type: "Markup" },
-      { name: "CSS3", type: "Styling" },
-      { name: "JavaScript", type: "Functionality" },
-      { name: "Firebase", type: "Backend Service" },
-      { name: "Netlify", type: "Hosting" }
-    ],
-    features: [
-      "Elegant product showcase",
-      "Firebase-powered CMS",
-      "Responsive design",
-      "Fast loading times",
-      "SEO optimized",
-      "Contact form integration"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1594736797933-d0801ba2fe65?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1488229297570-58520851e868?w=800&h=600&fit=crop"
     ]
   },
   {
     id: 4,
-    title: "Intern Task Monitoring Dashboard",
-    description: "Task tracker dashboard for interns to view, filter, and manage assigned work items.",
-    fullDescription: "A comprehensive task management dashboard specifically designed for intern supervision and productivity tracking. Features include task assignment, progress monitoring, deadline management, and performance analytics to help mentors guide interns effectively.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    tags: ["React", "Tailwind CSS", "Node.js"],
+    title: "Task Management App",
+    description: "Collaborative productivity tool for teams to organize, track, and complete projects efficiently.",
+    fullDescription: "A comprehensive task management application designed to help teams collaborate effectively. Features include task creation and assignment, progress tracking, deadline management, and team communication tools to streamline project workflows and boost productivity.",
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
+    tags: ["React", "Firebase", "Material UI"],
     liveUrl: "#",
     codeUrl: "#",
-    status: "development",
-    lines: "2.3k",
-    commits: "37",
+    status: "production",
+    lines: "2.7k",
+    commits: "45",
     category: "PRODUCTIVITY TOOL",
     year: "2024",
     duration: "5 weeks",
-    client: "HR Department",
+    client: "Project Management Firm",
     role: "Full Stack Developer",
-    challenge: "Creating an intuitive dashboard that helps mentors track intern progress while providing interns with clear task visibility and goal setting.",
-    solution: "Built a comprehensive dashboard with drag-and-drop task management, real-time progress tracking, and detailed analytics to improve intern productivity and mentor oversight.",
+    challenge: "Building a task management system that balances powerful features with an intuitive interface, while enabling real-time collaboration for distributed teams.",
+    solution: "Created a React application with Firebase for real-time data synchronization, user authentication, and cloud functions for automated notifications and task management.",
     technologies: [
       { name: "React", type: "Frontend" },
-      { name: "Tailwind CSS", type: "Styling" },
-      { name: "Node.js", type: "Backend" },
-      { name: "PostgreSQL", type: "Database" },
-      { name: "Chart.js", type: "Analytics" }
+      { name: "Firebase", type: "Backend & Database" },
+      { name: "Material UI", type: "Component Library" },
+      { name: "Redux", type: "State Management" },
+      { name: "Cloud Functions", type: "Serverless Computing" }
     ],
     features: [
-      "Drag-and-drop task management",
-      "Real-time progress tracking",
+      "Drag-and-drop task boards",
+      "Real-time collaboration",
+      "Task assignment and tracking",
       "Deadline notifications",
-      "Performance analytics",
-      "Mentor-intern communication",
-      "Goal setting and tracking"
+      "File attachments and sharing",
+      "Team chat and comments"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop"
     ]
   },
   {
     id: 5,
-    title: "E-learning Platform",
-    description: "Interactive online learning platform with video streaming and progress tracking.",
-    fullDescription: "A comprehensive e-learning platform designed to deliver interactive educational content with seamless video streaming, progress tracking, and student-teacher communication tools. The platform supports multiple course formats, interactive quizzes, and detailed analytics for educators.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
-    tags: ["Vue.js", "Laravel", "MySQL"],
+    title: "Fitness Tracking Platform",
+    description: "Mobile application for tracking workouts, nutrition, and health metrics with personalized insights.",
+    fullDescription: "A comprehensive fitness tracking solution that helps users monitor their workouts, nutrition, and health metrics. The platform provides personalized insights and recommendations based on user data, helping individuals achieve their fitness goals more effectively.",
+    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
+    tags: ["React Native", "Node.js", "GraphQL"],
     liveUrl: "#",
     codeUrl: "#",
     status: "production",
-    lines: "3.2k",
-    commits: "45",
-    category: "EDUCATION",
+    lines: "3.5k",
+    commits: "52",
+    category: "HEALTH & FITNESS",
     year: "2024",
-    duration: "6 weeks",
-    client: "Educational Institute",
-    role: "Full Stack Developer",
-    challenge: "Building a scalable learning management system that supports diverse content types while maintaining excellent performance and user engagement.",
-    solution: "Implemented a microservices architecture with efficient video streaming, interactive learning modules, and comprehensive progress tracking system.",
+    duration: "7 weeks",
+    client: "Fitness Startup",
+    role: "Mobile Developer",
+    challenge: "Creating a fitness tracking app that collects and analyzes various health metrics while providing an engaging, motivating experience that encourages consistent use.",
+    solution: "Developed a React Native application with Node.js backend and GraphQL API, implementing data visualization, machine learning for personalized recommendations, and gamification elements.",
     technologies: [
-      { name: "Vue.js", type: "Frontend" },
-      { name: "Laravel", type: "Backend" },
-      { name: "MySQL", type: "Database" },
-      { name: "Redis", type: "Caching" },
-      { name: "AWS S3", type: "Storage" }
+      { name: "React Native", type: "Mobile Framework" },
+      { name: "Node.js", type: "Backend" },
+      { name: "GraphQL", type: "API" },
+      { name: "MongoDB", type: "Database" },
+      { name: "TensorFlow Lite", type: "ML for Mobile" }
     ],
     features: [
-      "Video streaming and playback",
-      "Interactive course modules",
-      "Progress tracking system",
-      "Student-teacher messaging",
-      "Quiz and assessment tools",
-      "Certificate generation"
+      "Workout tracking and planning",
+      "Nutrition logging and analysis",
+      "Health metrics visualization",
+      "Personalized recommendations",
+      "Social sharing and challenges",
+      "Progress reports and insights"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
     ]
   },
   {
     id: 6,
-    title: "Weather Analytics App",
-    description: "Real-time weather tracking with predictive analytics and data visualization.",
-    fullDescription: "A sophisticated weather application that provides real-time weather data, predictive analytics, and beautiful data visualizations for weather enthusiasts and professionals. Features include historical data analysis, weather alerts, and customizable dashboards.",
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-    tags: ["React Native", "Python", "PostgreSQL"],
+    title: "Real Estate Marketplace",
+    description: "Property listing platform with advanced search, virtual tours, and agent communication tools.",
+    fullDescription: "A comprehensive real estate marketplace that connects buyers, sellers, and agents. The platform features property listings with advanced search capabilities, virtual tours, mortgage calculators, and secure communication channels between users and real estate professionals.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+    tags: ["Angular", "Express.js", "PostgreSQL"],
     liveUrl: "#",
     codeUrl: "#",
     status: "beta",
-    lines: "2.8k",
-    commits: "33",
-    category: "MOBILE APP",
+    lines: "4.2k",
+    commits: "61",
+    category: "REAL ESTATE",
     year: "2024",
-    duration: "4 weeks",
-    client: "Weather Service Provider",
-    role: "Mobile Developer",
-    challenge: "Creating a mobile weather app that processes large amounts of meteorological data while providing intuitive visualizations and accurate predictions.",
-    solution: "Developed a React Native app with Python-based machine learning backend for weather prediction and PostgreSQL for efficient data storage and retrieval.",
+    duration: "9 weeks",
+    client: "Real Estate Agency",
+    role: "Full Stack Developer",
+    challenge: "Building a feature-rich real estate platform that handles complex property data, search requirements, and secure communications while providing an intuitive user experience for both buyers and agents.",
+    solution: "Developed an Angular application with Express.js backend and PostgreSQL database, implementing geospatial search, virtual tour integration, and real-time messaging between users.",
     technologies: [
-      { name: "React Native", type: "Mobile Framework" },
-      { name: "Python", type: "Backend" },
+      { name: "Angular", type: "Frontend" },
+      { name: "Express.js", type: "Backend" },
       { name: "PostgreSQL", type: "Database" },
-      { name: "TensorFlow", type: "ML Framework" },
-      { name: "Chart.js", type: "Visualization" }
+      { name: "Socket.io", type: "Real-time Communication" },
+      { name: "AWS S3", type: "Media Storage" }
     ],
     features: [
-      "Real-time weather updates",
-      "Predictive weather analytics",
-      "Interactive weather maps",
-      "Historical data analysis",
-      "Weather alerts and notifications",
-      "Customizable dashboard widgets"
+      "Advanced property search filters",
+      "Interactive maps and location data",
+      "Virtual property tours",
+      "Mortgage calculator and affordability tools",
+      "Agent-client messaging system",
+      "Saved searches and property alerts"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1561484930-998b6a7b22e8?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560184897-ae75f418493e?w=800&h=600&fit=crop"
     ]
   }
 ];
@@ -398,7 +410,14 @@ export const ProjectsSection = () => {
     setCurrentView('projects');
     // Small delay to ensure state is updated before scrolling
     setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Find the projects section element and scroll to it
+      const projectsSection = document.getElementById('projects');
+      if (projectsSection) {
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // Fallback if element not found
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }, 100);
   };
 
@@ -441,9 +460,6 @@ export const ProjectsSection = () => {
                   Back to Portfolio
                 </Button>
                 <div className="flex items-center gap-4">
-                  <Button variant="ghost" size="sm">
-                    <Share2 className="h-4 w-4" />
-                  </Button>
                   <Button variant="ghost" size="sm">
                     <Heart className="h-4 w-4" />
                   </Button>
@@ -763,7 +779,7 @@ export const ProjectsSection = () => {
               )}
 
               {/* Action Buttons */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.2 }}
@@ -776,7 +792,7 @@ export const ProjectsSection = () => {
                   <ExternalLink className="h-4 w-4 mr-2" />
                   View Project Details
                 </Button>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
         </AnimatePresence>

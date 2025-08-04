@@ -93,7 +93,13 @@ export function PortfolioSidebar() {
       
       // Check if we're at the top (home section)
       if (scrollPosition < 200) {
-        setActiveSection("home");
+        if (activeSection !== "home") {
+          setActiveSection("home");
+          // Update URL to remove hash
+          if (window.location.hash) {
+            window.history.replaceState({}, "", window.location.pathname);
+          }
+        }
         return;
       }
 
@@ -108,7 +114,11 @@ export function PortfolioSidebar() {
             
             // Check if this section is in view
             if (scrollPosition >= elementTop - 150) {
-              setActiveSection(section.hash);
+              if (activeSection !== section.hash) {
+                setActiveSection(section.hash);
+                // Update URL hash
+                window.history.replaceState({}, "", `#${section.hash}`);
+              }
               return;
             }
           }

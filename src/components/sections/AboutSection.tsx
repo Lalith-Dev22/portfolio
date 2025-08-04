@@ -30,7 +30,7 @@ export const AboutSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4"
             >
-              MERN Stack Developer | AI Engineer | Passionate about real-time,
+              MERN Stack Developer | AI Enthusiast | Passionate about real-time,
               scalable solutions
             </motion.p>
           </div>
