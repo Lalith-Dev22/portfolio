@@ -177,7 +177,7 @@ const projects = [
   //   duration: "5 weeks",
   //   client: "Project Management Firm",
   //   role: "Full Stack Developer",
-  //   challenge: "Building a task management system that balances powerful features with an intuitive interface, while enabling real-time collaboration for distributed teams.",
+  //   challenge: "Building a task management system that balances powerful features with an intuitive interface, while enabling real-time collaboration for ributed teams.",
   //   solution: "Created a React application with Firebase for real-time data synchronization, user authentication, and cloud functions for automated notifications and task management.",
   //   technologies: [
   //     { name: "React", type: "Frontend" },
