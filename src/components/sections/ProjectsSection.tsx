@@ -33,8 +33,8 @@ import Image3 from '../../Assets/portfolio5.png';
 import Image4 from '../../Assets/portfolio2.png';
 import Image5 from '../../Assets/Ai-hr1.png';
 import Image6 from '../../Assets/Ai-hr2.png';
-import Image7 from '../../Assets/ai-hr3.png';
-import Image8 from '../../Assets/ai-hr4.png';
+import Image7 from '../../Assets/Ai-hr3.png';
+import Image8 from '../../Assets/Ai-hr4.png';
 
 
 
