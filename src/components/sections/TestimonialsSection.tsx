@@ -5,52 +5,52 @@ import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
-    name: "Tousif Pasha",
-    role: "Client",
+    name: "Dr. Sarah Johnson",
+    role: "Computer Science Professor",
     content:
-      "Thank you for your excellent work on my portfolio. I truly appreciate your professionalism and attention to detail — it made the entire experience smooth. Looking forward to working with you again!",
+      "Lalith demonstrated exceptional problem-solving skills and technical proficiency throughout the course. His ability to grasp complex algorithms and implement them efficiently was truly impressive. A dedicated and promising student.",
     rating: 5
   },
   {
-    name: "Vignesh. R",
-    role: "Client",
+    name: "Prof. Michael Chen",
+    role: "Software Engineering Instructor",
     content:
-      "Awesome service! I truly appreciate the professionalism and attention to detail. The entire experience was smooth, and I’m definitely looking forward to future collaborations.",
+      "Outstanding work on the capstone project! Lalith's attention to code quality, documentation, and user experience shows great maturity as a developer. His collaborative approach made him a valuable team member.",
     rating: 5
   },
   {
-    name: "Angel.R",
-    role: "Client",
+    name: "Dr. Priya Sharma",
+    role: "Database Systems Professor",
     content:
-      "Thank you so much for all your help with the project. I couldn’t have done it without your support. Your ideas and guidance really helped us, and I’ve learned a lot from you. You truly made the project awesome.",
+      "Lalith's understanding of database design principles and optimization techniques was remarkable. His project on HR analytics showed both technical depth and practical application. Highly recommended for any development role.",
     rating: 5
   },
   {
-    name: "Varsha",
-    role: "Tech Lead",
+    name: "Alex Thompson",
+    role: "Study Group Partner",
     content:
-"Working with you has been a delight. You brought clarity to my vision and translated it into an intuitive product. Deadlines were met, and quality was never compromised.",
+      "Working with Lalith on our web development projects was amazing. He always brought innovative ideas and helped explain complex concepts to the team. His dedication to learning and sharing knowledge is inspiring.",
     rating: 5
   },
   {
-    name: "Amit Verma",
-    role: "Engineering Manager",
+    name: "Dr. Rajesh Kumar",
+    role: "Machine Learning Professor",
     content:
-      "Exceptional work ethic and technical ability. The final output exceeded my expectations in terms of performance, design, and scalability. Highly recommended!",
+      "Lalith's implementation of AI models in his HR platform project demonstrated excellent understanding of NLP and data processing. His ability to bridge theory with practical applications is commendable.",
     rating: 5
   },
   {
-    name: "Linda Carter",
-    role: "UX Consultant",
+    name: "Lisa Rodriguez",
+    role: "Project Team Lead",
     content:
-      "Brilliant eye for detail and user experience. The interfaces delivered were modern, fluid, and extremely user-centric. I’d happily recommend your services to others.",
+      "Lalith was instrumental in our team's success. His full-stack development skills and problem-solving approach helped us deliver a polished product. He's someone you can always count on to deliver quality work.",
     rating: 5
   },
   {
-    name: "Rajesh Iyer",
-    role: "CTO",
+    name: "Dr. James Wilson",
+    role: "Academic Advisor",
     content:
-      "Your dedication and skillset made a huge impact on my project. Everything was handled with utmost professionalism. It's rare to find such a reliable developer.",
+      "Throughout his academic journey, Lalith has shown consistent growth and excellence. His portfolio projects demonstrate not just technical skills but also creativity and user-centric thinking. A bright future ahead!",
     rating: 5
   }
 ];
@@ -76,7 +76,7 @@ export const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Client Testimonials
+              Academic Testimonials
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ export const TestimonialsSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto"
             >
-              What clients say about our collaboration and the results we've achieved together
+              What professors, peers, and mentors say about my academic journey and technical growth
             </motion.p>
           </div>
 
@@ -139,7 +139,7 @@ export const TestimonialsSection = () => {
               <div className="text-sm text-muted-foreground">Client Satisfaction</div>
             </div>
             <div className="glass-card p-8 space-y-4">
-              <div className="text-4xl font-bold text-primary">50+</div>
+              <div className="text-4xl font-bold text-primary">10+</div>
               <div className="text-sm text-muted-foreground">Happy Clients</div>
             </div>
             <div className="glass-card p-8 space-y-4">

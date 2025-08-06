@@ -120,166 +120,166 @@ const projects = [
   ]
 },
 
-  {
-    id: 3,
-    title: "AI-Powered Chatbot",
-    description: "Intelligent conversational agent for customer support with natural language processing capabilities.",
-    fullDescription: "An advanced chatbot solution that leverages artificial intelligence to provide automated customer support. The system understands natural language queries, learns from interactions, and provides relevant responses to common customer questions, reducing support ticket volume.",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
-    tags: ["Python", "TensorFlow", "NLP"],
-    liveUrl: "#",
-    codeUrl: "#",
-    status: "beta",
-    lines: "2.2k",
-    commits: "38",
-    category: "ARTIFICIAL INTELLIGENCE",
-    year: "2024",
-    duration: "6 weeks",
-    client: "SaaS Company",
-    role: "AI Engineer",
-    challenge: "Creating an intelligent chatbot that can understand natural language queries and provide accurate, helpful responses while continuously improving from user interactions.",
-    solution: "Implemented a machine learning model using TensorFlow and natural language processing techniques, with a feedback loop system for continuous improvement based on user interactions.",
-    technologies: [
-      { name: "Python", type: "Backend" },
-      { name: "TensorFlow", type: "Machine Learning" },
-      { name: "NLTK", type: "Natural Language Processing" },
-      { name: "Flask", type: "API Framework" },
-      { name: "MongoDB", type: "Database" }
-    ],
-    features: [
-      "Natural language understanding",
-      "Context-aware conversations",
-      "Automated ticket classification",
-      "Learning from user interactions",
-      "Multi-language support",
-      "Integration with CRM systems"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1488229297570-58520851e868?w=800&h=600&fit=crop"
-    ]
-  },
-  {
-    id: 4,
-    title: "Task Management App",
-    description: "Collaborative productivity tool for teams to organize, track, and complete projects efficiently.",
-    fullDescription: "A comprehensive task management application designed to help teams collaborate effectively. Features include task creation and assignment, progress tracking, deadline management, and team communication tools to streamline project workflows and boost productivity.",
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
-    tags: ["React", "Firebase", "Material UI"],
-    liveUrl: "#",
-    codeUrl: "#",
-    status: "production",
-    lines: "2.7k",
-    commits: "45",
-    category: "PRODUCTIVITY TOOL",
-    year: "2024",
-    duration: "5 weeks",
-    client: "Project Management Firm",
-    role: "Full Stack Developer",
-    challenge: "Building a task management system that balances powerful features with an intuitive interface, while enabling real-time collaboration for distributed teams.",
-    solution: "Created a React application with Firebase for real-time data synchronization, user authentication, and cloud functions for automated notifications and task management.",
-    technologies: [
-      { name: "React", type: "Frontend" },
-      { name: "Firebase", type: "Backend & Database" },
-      { name: "Material UI", type: "Component Library" },
-      { name: "Redux", type: "State Management" },
-      { name: "Cloud Functions", type: "Serverless Computing" }
-    ],
-    features: [
-      "Drag-and-drop task boards",
-      "Real-time collaboration",
-      "Task assignment and tracking",
-      "Deadline notifications",
-      "File attachments and sharing",
-      "Team chat and comments"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop"
-    ]
-  },
-  {
-    id: 5,
-    title: "Fitness Tracking Platform",
-    description: "Mobile application for tracking workouts, nutrition, and health metrics with personalized insights.",
-    fullDescription: "A comprehensive fitness tracking solution that helps users monitor their workouts, nutrition, and health metrics. The platform provides personalized insights and recommendations based on user data, helping individuals achieve their fitness goals more effectively.",
-    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
-    tags: ["React Native", "Node.js", "GraphQL"],
-    liveUrl: "#",
-    codeUrl: "#",
-    status: "production",
-    lines: "3.5k",
-    commits: "52",
-    category: "HEALTH & FITNESS",
-    year: "2024",
-    duration: "7 weeks",
-    client: "Fitness Startup",
-    role: "Mobile Developer",
-    challenge: "Creating a fitness tracking app that collects and analyzes various health metrics while providing an engaging, motivating experience that encourages consistent use.",
-    solution: "Developed a React Native application with Node.js backend and GraphQL API, implementing data visualization, machine learning for personalized recommendations, and gamification elements.",
-    technologies: [
-      { name: "React Native", type: "Mobile Framework" },
-      { name: "Node.js", type: "Backend" },
-      { name: "GraphQL", type: "API" },
-      { name: "MongoDB", type: "Database" },
-      { name: "TensorFlow Lite", type: "ML for Mobile" }
-    ],
-    features: [
-      "Workout tracking and planning",
-      "Nutrition logging and analysis",
-      "Health metrics visualization",
-      "Personalized recommendations",
-      "Social sharing and challenges",
-      "Progress reports and insights"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
-    ]
-  },
-  {
-    id: 6,
-    title: "Real Estate Marketplace",
-    description: "Property listing platform with advanced search, virtual tours, and agent communication tools.",
-    fullDescription: "A comprehensive real estate marketplace that connects buyers, sellers, and agents. The platform features property listings with advanced search capabilities, virtual tours, mortgage calculators, and secure communication channels between users and real estate professionals.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-    tags: ["Angular", "Express.js", "PostgreSQL"],
-    liveUrl: "#",
-    codeUrl: "#",
-    status: "beta",
-    lines: "4.2k",
-    commits: "61",
-    category: "REAL ESTATE",
-    year: "2024",
-    duration: "9 weeks",
-    client: "Real Estate Agency",
-    role: "Full Stack Developer",
-    challenge: "Building a feature-rich real estate platform that handles complex property data, search requirements, and secure communications while providing an intuitive user experience for both buyers and agents.",
-    solution: "Developed an Angular application with Express.js backend and PostgreSQL database, implementing geospatial search, virtual tour integration, and real-time messaging between users.",
-    technologies: [
-      { name: "Angular", type: "Frontend" },
-      { name: "Express.js", type: "Backend" },
-      { name: "PostgreSQL", type: "Database" },
-      { name: "Socket.io", type: "Real-time Communication" },
-      { name: "AWS S3", type: "Media Storage" }
-    ],
-    features: [
-      "Advanced property search filters",
-      "Interactive maps and location data",
-      "Virtual property tours",
-      "Mortgage calculator and affordability tools",
-      "Agent-client messaging system",
-      "Saved searches and property alerts"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1560184897-ae75f418493e?w=800&h=600&fit=crop"
-    ]
-  }
+  // {
+  //   id: 3,
+  //   title: "AI-Powered Chatbot",
+  //   description: "Intelligent conversational agent for customer support with natural language processing capabilities.",
+  //   fullDescription: "An advanced chatbot solution that leverages artificial intelligence to provide automated customer support. The system understands natural language queries, learns from interactions, and provides relevant responses to common customer questions, reducing support ticket volume.",
+  //   image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
+  //   tags: ["Python", "TensorFlow", "NLP"],
+  //   liveUrl: "#",
+  //   codeUrl: "#",
+  //   status: "beta",
+  //   lines: "2.2k",
+  //   commits: "38",
+  //   category: "ARTIFICIAL INTELLIGENCE",
+  //   year: "2024",
+  //   duration: "6 weeks",
+  //   client: "SaaS Company",
+  //   role: "AI Engineer",
+  //   challenge: "Creating an intelligent chatbot that can understand natural language queries and provide accurate, helpful responses while continuously improving from user interactions.",
+  //   solution: "Implemented a machine learning model using TensorFlow and natural language processing techniques, with a feedback loop system for continuous improvement based on user interactions.",
+  //   technologies: [
+  //     { name: "Python", type: "Backend" },
+  //     { name: "TensorFlow", type: "Machine Learning" },
+  //     { name: "NLTK", type: "Natural Language Processing" },
+  //     { name: "Flask", type: "API Framework" },
+  //     { name: "MongoDB", type: "Database" }
+  //   ],
+  //   features: [
+  //     "Natural language understanding",
+  //     "Context-aware conversations",
+  //     "Automated ticket classification",
+  //     "Learning from user interactions",
+  //     "Multi-language support",
+  //     "Integration with CRM systems"
+  //   ],
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1488229297570-58520851e868?w=800&h=600&fit=crop"
+  //   ]
+  // },
+  // {
+  //   id: 4,
+  //   title: "Task Management App",
+  //   description: "Collaborative productivity tool for teams to organize, track, and complete projects efficiently.",
+  //   fullDescription: "A comprehensive task management application designed to help teams collaborate effectively. Features include task creation and assignment, progress tracking, deadline management, and team communication tools to streamline project workflows and boost productivity.",
+  //   image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
+  //   tags: ["React", "Firebase", "Material UI"],
+  //   liveUrl: "#",
+  //   codeUrl: "#",
+  //   status: "production",
+  //   lines: "2.7k",
+  //   commits: "45",
+  //   category: "PRODUCTIVITY TOOL",
+  //   year: "2024",
+  //   duration: "5 weeks",
+  //   client: "Project Management Firm",
+  //   role: "Full Stack Developer",
+  //   challenge: "Building a task management system that balances powerful features with an intuitive interface, while enabling real-time collaboration for distributed teams.",
+  //   solution: "Created a React application with Firebase for real-time data synchronization, user authentication, and cloud functions for automated notifications and task management.",
+  //   technologies: [
+  //     { name: "React", type: "Frontend" },
+  //     { name: "Firebase", type: "Backend & Database" },
+  //     { name: "Material UI", type: "Component Library" },
+  //     { name: "Redux", type: "State Management" },
+  //     { name: "Cloud Functions", type: "Serverless Computing" }
+  //   ],
+  //   features: [
+  //     "Drag-and-drop task boards",
+  //     "Real-time collaboration",
+  //     "Task assignment and tracking",
+  //     "Deadline notifications",
+  //     "File attachments and sharing",
+  //     "Team chat and comments"
+  //   ],
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop"
+  //   ]
+  // },
+  // {
+  //   id: 5,
+  //   title: "Fitness Tracking Platform",
+  //   description: "Mobile application for tracking workouts, nutrition, and health metrics with personalized insights.",
+  //   fullDescription: "A comprehensive fitness tracking solution that helps users monitor their workouts, nutrition, and health metrics. The platform provides personalized insights and recommendations based on user data, helping individuals achieve their fitness goals more effectively.",
+  //   image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
+  //   tags: ["React Native", "Node.js", "GraphQL"],
+  //   liveUrl: "#",
+  //   codeUrl: "#",
+  //   status: "production",
+  //   lines: "3.5k",
+  //   commits: "52",
+  //   category: "HEALTH & FITNESS",
+  //   year: "2024",
+  //   duration: "7 weeks",
+  //   client: "Fitness Startup",
+  //   role: "Mobile Developer",
+  //   challenge: "Creating a fitness tracking app that collects and analyzes various health metrics while providing an engaging, motivating experience that encourages consistent use.",
+  //   solution: "Developed a React Native application with Node.js backend and GraphQL API, implementing data visualization, machine learning for personalized recommendations, and gamification elements.",
+  //   technologies: [
+  //     { name: "React Native", type: "Mobile Framework" },
+  //     { name: "Node.js", type: "Backend" },
+  //     { name: "GraphQL", type: "API" },
+  //     { name: "MongoDB", type: "Database" },
+  //     { name: "TensorFlow Lite", type: "ML for Mobile" }
+  //   ],
+  //   features: [
+  //     "Workout tracking and planning",
+  //     "Nutrition logging and analysis",
+  //     "Health metrics visualization",
+  //     "Personalized recommendations",
+  //     "Social sharing and challenges",
+  //     "Progress reports and insights"
+  //   ],
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
+  //   ]
+  // },
+  // {
+  //   id: 6,
+  //   title: "Real Estate Marketplace",
+  //   description: "Property listing platform with advanced search, virtual tours, and agent communication tools.",
+  //   fullDescription: "A comprehensive real estate marketplace that connects buyers, sellers, and agents. The platform features property listings with advanced search capabilities, virtual tours, mortgage calculators, and secure communication channels between users and real estate professionals.",
+  //   image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+  //   tags: ["Angular", "Express.js", "PostgreSQL"],
+  //   liveUrl: "#",
+  //   codeUrl: "#",
+  //   status: "beta",
+  //   lines: "4.2k",
+  //   commits: "61",
+  //   category: "REAL ESTATE",
+  //   year: "2024",
+  //   duration: "9 weeks",
+  //   client: "Real Estate Agency",
+  //   role: "Full Stack Developer",
+  //   challenge: "Building a feature-rich real estate platform that handles complex property data, search requirements, and secure communications while providing an intuitive user experience for both buyers and agents.",
+  //   solution: "Developed an Angular application with Express.js backend and PostgreSQL database, implementing geospatial search, virtual tour integration, and real-time messaging between users.",
+  //   technologies: [
+  //     { name: "Angular", type: "Frontend" },
+  //     { name: "Express.js", type: "Backend" },
+  //     { name: "PostgreSQL", type: "Database" },
+  //     { name: "Socket.io", type: "Real-time Communication" },
+  //     { name: "AWS S3", type: "Media Storage" }
+  //   ],
+  //   features: [
+  //     "Advanced property search filters",
+  //     "Interactive maps and location data",
+  //     "Virtual property tours",
+  //     "Mortgage calculator and affordability tools",
+  //     "Agent-client messaging system",
+  //     "Saved searches and property alerts"
+  //   ],
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop",
+  //     "https://images.unsplash.com/photo-1560184897-ae75f418493e?w=800&h=600&fit=crop"
+  //   ]
+  // }
 ];
 
 const StatusBadge = ({ status }: { status: string }) => {
@@ -844,7 +844,7 @@ export const ProjectsSection = () => {
               ))}
             </div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -858,7 +858,7 @@ export const ProjectsSection = () => {
                 <Terminal className="h-4 w-4 mr-2" />
                 explore --all --projects
               </Button>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </AnimatePresence>
       </div>

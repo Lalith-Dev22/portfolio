@@ -214,7 +214,7 @@ export const ContactSection = () => {
                     </label>
                     <Input 
                       name="firstName"
-                      placeholder="John"
+                      placeholder=""
                       value={formData.firstName}
                       onChange={handleInputChange}
                       className={`bg-background/50 border-border/50 focus:border-primary transition-colors ${
@@ -232,7 +232,7 @@ export const ContactSection = () => {
                     </label>
                     <Input 
                       name="lastName"
-                      placeholder="Doe"
+                      placeholder=""
                       value={formData.lastName}
                       onChange={handleInputChange}
                       className={`bg-background/50 border-border/50 focus:border-primary transition-colors ${
@@ -253,7 +253,7 @@ export const ContactSection = () => {
                   <Input 
                     name="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder=""
                     value={formData.email}
                     onChange={handleInputChange}
                     className={`bg-background/50 border-border/50 focus:border-primary transition-colors ${
@@ -272,7 +272,7 @@ export const ContactSection = () => {
                   </label>
                   <Input 
                     name="subject"
-                    placeholder="Project Discussion"
+                    placeholder=""
                     value={formData.subject}
                     onChange={handleInputChange}
                     className={`bg-background/50 border-border/50 focus:border-primary transition-colors ${
