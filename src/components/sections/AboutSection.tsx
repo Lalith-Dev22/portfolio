@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ProfileCard from "@/components/ProfileCard";
+import Image1 from "../../Assets/profile.png";
 
 export const AboutSection = () => {
   return (
@@ -162,7 +163,7 @@ export const AboutSection = () => {
                 >
                   <div className="profile-container">
                     <ProfileCard
-                      avatarUrl="/profile.png"
+                      avatarUrl={Image1}
                       name="Lalith Kishore"
                       title="MERN Stack Developer"
                       handle="lalithkishore"
