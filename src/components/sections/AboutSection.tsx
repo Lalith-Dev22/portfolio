@@ -162,7 +162,7 @@ export const AboutSection = () => {
                 >
                   <div className="profile-container">
                     <ProfileCard
-                      avatarUrl="/src/Assets/profile.png"
+                      avatarUrl="/profile.png"
                       name="Lalith Kishore"
                       title="MERN Stack Developer"
                       handle="lalithkishore"
