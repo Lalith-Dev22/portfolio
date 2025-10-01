@@ -1,0 +1,347 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Modern Teal-Green Theme matching the reference image */
+    --background: 221 39% 11%;    /* #1e293b - dark slate background */
+    --foreground: 0 0% 98%;       /* #fafafa - white text */
+
+    --card: 221 39% 11%;          /* #1e293b - card backgrounds */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 221 39% 11%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 173 80% 40%;       /* #14b8a6 - vibrant teal primary */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 172 82% 60%;     /* #2dd4bf - lighter teal for accents */
+    --secondary-foreground: 221 39% 11%;
+
+    --muted: 215 28% 17%;         /* #334155 - muted backgrounds */
+    --muted-foreground: 215 20% 65%; /* #94a3b8 - muted text */
+
+    --accent: 159 84% 39%;        /* #0f766e - dark teal accent */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;     /* #ef4444 - error red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 28% 17%;        /* #334155 - subtle borders */
+    --input: 215 28% 17%;
+    --ring: 173 80% 40%;
+
+    --radius: 0.75rem;
+
+    /* Enhanced design tokens for modern teal theme */
+    --gradient-primary: linear-gradient(135deg, hsl(173 80% 40%), hsl(172 82% 60%));
+    --gradient-secondary: linear-gradient(45deg, hsl(159 84% 39%), hsl(172 82% 60%));
+    --gradient-dark: linear-gradient(180deg, hsl(221 39% 11%), hsl(215 28% 17%));
+    --gradient-mesh: radial-gradient(circle at 30% 20%, hsl(173 80% 40% / 0.1) 0%, transparent 60%),
+                     radial-gradient(circle at 70% 80%, hsl(172 82% 60% / 0.08) 0%, transparent 60%);
+
+    /* Typography */
+    --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Enhanced shadows with teal theme */
+    --shadow-glow: 0 0 50px hsl(173 80% 40% / 0.15);
+    --shadow-soft: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-primary-glow: 0 0 40px hsl(173 80% 40% / 0.25);
+
+    --sidebar-background: 221 39% 11%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 173 80% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 28% 17%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 28% 17%;
+    --sidebar-ring: 173 80% 40%;
+  }
+
+  .dark {
+    --background: 210 50% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 45% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 45% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 177 100% 45%;
+    --primary-foreground: 210 50% 6%;
+
+    --secondary: 220 75% 52%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 45% 8%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 172 77% 48%;
+    --accent-foreground: 210 50% 6%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 45% 12%;
+    --input: 210 45% 12%;
+    --ring: 177 100% 45%;
+    --sidebar-background: 210 50% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 177 100% 45%;
+    --sidebar-primary-foreground: 210 50% 6%;
+    --sidebar-accent: 210 45% 8%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 210 45% 12%;
+    --sidebar-ring: 177 100% 45%;
+  }
+  .theme {
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-display;
+    overflow-x: hidden;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    /* Hide scrollbars completely */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Scroll snap behavior */
+  .snap-container {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .snap-item {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  /* Mobile responsive improvements */
+  @media (max-width: 768px) {
+    .hero-title {
+      -webkit-text-stroke: 0.5px #00e5d8;
+      text-stroke: 0.5px #00e5d8;
+    }
+
+    .section-padding {
+      @apply px-4 sm:px-6;
+    }
+
+    /* Improve touch targets */
+    button, 
+    [role="button"],
+    input,
+    select,
+    textarea {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Tablet responsive improvements */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .section-padding {
+      @apply px-8 sm:px-12;
+    }
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .text-gradient-animate {
+    @apply bg-gradient-to-r from-primary via-foreground to-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-text-reveal;
+  }
+
+  .hero-title {
+    @apply text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[12rem] font-black leading-none tracking-tighter;
+    -webkit-text-stroke: 1px #00e5d8;
+    text-stroke: 1px #00e5d8;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 md:px-12 lg:px-24;
+  }
+
+  .glass-card {
+    @apply bg-card/20 backdrop-blur-lg border border-primary/20 rounded-2xl;
+    background: linear-gradient(145deg, hsl(var(--card) / 0.1), hsl(var(--card) / 0.05));
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.1), inset 0 1px 0 hsl(var(--primary) / 0.1);
+  }
+
+  .floating-bg {
+    @apply absolute inset-0 opacity-40 animate-float;
+    background: radial-gradient(circle at 30% 20%, hsl(var(--primary) / 0.1) 0%, transparent 60%),
+                radial-gradient(circle at 70% 80%, hsl(var(--secondary) / 0.08) 0%, transparent 60%);
+  }
+
+  .smooth-enter {
+    @apply opacity-0 translate-y-12 scale-95 transition-all duration-700 ease-out;
+  }
+
+  .smooth-enter.active {
+    @apply opacity-100 translate-y-0 scale-100;
+  }
+
+  /* Vertical writing mode for side text */
+  .writing-mode-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  /* Additional animations */
+  @keyframes text-reveal {
+    from {
+      background-position: 200% center;
+    }
+    to {
+      background-position: -200% center;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-10px) rotate(1deg);
+    }
+    66% {
+      transform: translateY(5px) rotate(-1deg);
+    }
+  }
+
+  .animate-text-reveal {
+    animation: text-reveal 3s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Custom scrollbar - Hidden */
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+
+  /* Hide scrollbars for Firefox */
+  * {
+    scrollbar-width: none;
+  }
+}
+
+/* Focus and accessibility styles */
+:focus-visible {
+  outline: 2px solid #00e5d8;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --primary: 177 100% 60%;
+    --border: 210 30% 25%;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-float,
+  .animate-pulse,
+  .animate-text-reveal {
+    animation: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .glass-card {
+    background: white !important;
+    border: 1px solid black !important;
+  }
+
+  .text-gradient {
+    background: none !important;
+    color: black !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+  }
+}
+/* ---break---
+*/
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+/* ---break---
+*/
+@theme inline {
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}
