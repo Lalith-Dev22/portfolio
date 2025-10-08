@@ -479,34 +479,6 @@ const ProjectsOverview = () => {
                     </div>
                   </div>
 
-                  {/* Action Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 pt-2 sm:pt-4">
-                    <Button
-                      size="sm"
-                      className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-mono border-0 text-xs sm:text-sm h-8 sm:h-9"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open(project.liveUrl, '_blank');
-                      }}
-                    >
-                      <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2" />
-                      <span className="hidden xs:inline">Live Demo</span>
-                      <span className="xs:hidden">Demo</span>
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="flex-1 border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 font-mono text-xs sm:text-sm h-8 sm:h-9"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open(project.githubUrl, '_blank');
-                      }}
-                    >
-                      <Github className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2" />
-                      <span className="hidden xs:inline">Source</span>
-                      <span className="xs:hidden">Code</span>
-                    </Button>
-                  </div>
                 </div>
 
                 {/* Grid Pattern Overlay */}

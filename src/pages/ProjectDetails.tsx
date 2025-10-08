@@ -424,26 +424,6 @@ const ProjectDetails = () => {
                   </CardContent>
                 </Card>
               </div>
-
-              {/* Action Buttons */}
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 group">
-                  <Play className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
-                  Live Demo
-                </Button>
-                <Button size="lg" variant="outline" className="border-primary/30 hover:bg-primary/10 group">
-                  <Github className="h-5 w-5 mr-2 group-hover:rotate-12 transition-transform" />
-                  View Code
-                </Button>
-                <Button size="lg" variant="outline" className="border-purple/30 hover:bg-purple/10 group">
-                  <Download className="h-5 w-5 mr-2 group-hover:translate-y-[-2px] transition-transform" />
-                  Download
-                </Button>
-                <Button size="lg" variant="outline" className="border-pink/30 hover:bg-pink/10 group">
-                  <BookOpen className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
-                  Documentation
-                </Button>
-              </div>
             </motion.div>
 
             {/* Right Content - Project Banner/Screenshots */}
